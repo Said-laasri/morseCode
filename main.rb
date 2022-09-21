@@ -46,5 +46,7 @@ def decode_intel(string_word)
   string
 end
 
-puts decode_intel("-- -.--  -. .- -- .")
+puts decode_char('.-')
+puts decode_word('-- -.--')
+puts decode_intel('-- -.--  -. .- -- .')
 puts decode_intel('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
