@@ -30,7 +30,7 @@ end
 
 def decode_word(word)
   code = word.split(/ /)
-  word = ''
+  word = ' '
   code.each do |serial|
     word = "#{word}#{decode_char(serial)}"
   end
@@ -39,12 +39,12 @@ end
 
 def decode_intel(string_word)
   message = string_word.split(/ /)
-  string = ''
+  string = ' '
   message.each do |intel|
     string = "#{string}#{decode_word(intel)}"
   end
   string
 end
 
-puts decode_intel('-- -.-- -. .- -- .')
-puts decode_intel('.- -... --- -..- ..-. ..- .-.. .-.. --- ..-. .-. ..- -... .. . ...')
+puts decode_intel("-- -.--  -. .- -- .")
+puts decode_intel('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
