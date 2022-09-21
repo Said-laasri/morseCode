@@ -37,7 +37,14 @@ def decode_word(word)
   word
 end
 
-
+def decode_intel(string_word)
+  message = string_word.split(/ /)
+  string = ''
+  message.each do |intel|
+    string = "#{string}#{decode_word(intel)}"
+  end
+  string
+end
 
 puts decode_intel('-- -.-- -. .- -- .')
 puts decode_intel('.- -... --- -..- ..-. ..- .-.. .-.. --- ..-. .-. ..- -... .. . ...')
