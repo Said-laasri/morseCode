@@ -1,4 +1,4 @@
 def code(string)
-    puts("hello #{string}")
+  puts("hello #{string}")
 end
-code("onyin")
+code('onyin')
